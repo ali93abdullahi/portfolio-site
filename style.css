@@ -1,0 +1,38 @@
+body {
+    font-family: Georgia, serif;
+    background-color: #fff;
+    color: #000;
+    margin: 0;
+    padding: 40px 20px;
+    text-align: center;
+  }
+  
+  main {
+    max-width: 600px;
+    margin: auto;
+  }
+  
+  h1 {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  section {
+    margin: 4rem 0;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  a {
+    color: inherit;
+    text-decoration: underline;
+  }
+  
