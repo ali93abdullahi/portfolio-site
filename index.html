@@ -6,6 +6,21 @@
   <title>Your Name</title>
   <link rel="stylesheet" href="style.css" />
 </head>
+<script src="https://cdn.jsdelivr.net/npm/tsparticles@2/tsparticles.bundle.min.js"></script>
+<div id="tsparticles"></div>
+<script>
+  tsParticles.load("tsparticles", {
+    fullScreen: { enable: true },
+    particles: {
+      number: { value: 80 },
+      color: { value: "#000" },
+      shape: { type: "circle" },
+      opacity: { value: 0.5 },
+      size: { value: 3 },
+      move: { enable: true, speed: 1 }
+    }
+  });
+</script>
 <body>
   <main>
     <section class="intro">
