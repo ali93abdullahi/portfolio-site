@@ -1,23 +1,28 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Your Name</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
+<!-- Particle stars background -->
 <script src="https://cdn.jsdelivr.net/npm/tsparticles@2/tsparticles.bundle.min.js"></script>
 <div id="tsparticles"></div>
 <script>
   tsParticles.load("tsparticles", {
     fullScreen: { enable: true },
     particles: {
-      number: { value: 80 },
-      color: { value: "#000" },
+      number: { value: 100 },
+      color: { value: "#ffffff" },
       shape: { type: "circle" },
-      opacity: { value: 0.5 },
-      size: { value: 3 },
-      move: { enable: true, speed: 1 }
+      opacity: {
+        value: 0.7,
+        random: true
+      },
+      size: {
+        value: 1.5,
+        random: true
+      },
+      move: {
+        enable: true,
+        speed: 0.3,
+        direction: "none",
+        straight: false,
+        outModes: { default: "out" }
+      }
     }
   });
 </script>

@@ -1,4 +1,4 @@
-/* Particle background behind everything */
+/* Particle background container */
 #tsparticles {
     position: fixed;
     top: 0;
@@ -8,17 +8,21 @@
     z-index: -1;
   }
   
-  /* Page layout and colors */
+  /* Body with space image background */
   body {
     font-family: Georgia, serif;
-    background-color: #fefefe; /* fallback background */
-    color: #333; /* text color */
+    background-image: url("space.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     margin: 0;
     padding: 40px 20px;
     text-align: center;
+    color: white;
     position: relative;
-    z-index: 1; /* Ensures content is on top of particles */
-  }
+    z-index: 1;
+  }  
   
   main {
     max-width: 600px;
