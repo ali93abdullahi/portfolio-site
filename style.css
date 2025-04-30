@@ -1,33 +1,33 @@
-/* Particle background container */
+/* Make sure the particles canvas is truly in the background */
 #tsparticles {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-  }
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -2;
+  pointer-events: none; /* Prevent blocking clicks */
+}
   
-  /* Body with space image background */
-  body {
-    font-family: Georgia, serif;
-    background-image: url("space.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    margin: 0;
-    padding: 40px 20px;
-    text-align: center;
-    color: white;
-    position: relative;
-    z-index: 1;
-  }  
+body {
+  font-family: Georgia, serif;
+  background-image: url("space.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: white;
+  margin: 0;
+  padding: 40px 20px;
+  text-align: center;
+  position: relative;
+  z-index: -1; /* BELOW the content, ABOVE particles */
+}
   
-  main {
-    max-width: 600px;
-    margin: auto;
-  }
+main {
+  z-index: 1;
+  position: relative;
+}
   
   h1 {
     font-size: 3rem;
