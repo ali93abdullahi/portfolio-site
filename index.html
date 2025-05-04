@@ -5,16 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Ali Abdullahi Portfolio</title>
   <link rel="stylesheet" href="style.css" />
-  <script src="https://cdn.jsdelivr.net/npm/tsparticles@2/tsparticles.bundle.min.js"></script>
 </head>
 <body>
 
-  <!-- Particle stars background -->
-  <div id="tsparticles"></div>
-
-  <!-- Main content -->
+  <!-- Main content only -->
   <main>
     <section class="intro">
+      <img src="profile.jpg" alt="Ali Abdullahi" class="profile-pic" />
       <h1>Ali Abdullahi</h1>
       <p>Computer Scientist</p>
     </section>
@@ -28,11 +25,20 @@
     <section class="projects">
       <h2>Projects</h2>
       <ul>
-        <li><a href="#">Project One</a> – Short description</li>
-        <li><a href="#">Project Two</a> – Short description</li>
+        <li>
+          <a href="https://github.com/ali93abdullahi/MyContactListApp" target="_blank">
+            📇 MyContactListApp
+          </a>
+          – Android app built using Kotlin to store, edit, and manage contacts locally.
+        </li>
+        <li>
+          <a href="https://github.com/ali93abdullahi/To-do-list-app" target="_blank">
+            ✅ To-Do List App
+          </a>
+          – A basic task tracker app using Kotlin and SQLite for persistent storage.
+        </li>
       </ul>
-    </section>
-
+    </section>    
     <section class="contact">
       <h2>Contact</h2>
       <p>Email: ali93abdullahi@yahoo.com</p>
@@ -40,24 +46,5 @@
     </section>
   </main>
 
-  <!-- tsParticles configuration -->
-  <script>
-    tsParticles.load("tsparticles", {
-      fullScreen: { enable: true },
-      background: { color: { value: "#00000000" } },
-      particles: {
-        number: { value: 120 },
-        color: { value: "#ffffff" },
-        shape: { type: "circle" },
-        opacity: { value: 0.5, random: true },
-        size: { value: 1.5, random: true },
-        move: {
-          enable: true,
-          speed: 0.3,
-          outModes: { default: "out" }
-        }
-      }
-    });
-  </script>
 </body>
 </html>
